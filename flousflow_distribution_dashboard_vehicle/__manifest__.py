@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Distribution Dashboard — Vehicle Analytics',
-    'version': '19.0.1.0.0',
+    'name': 'Distribution Dashboard - Vehicle Analytics',
+    'version': '20.0.1.0.0',
     'category': 'Sales/Distribution',
     'summary': 'Vehicle section and vehicle analysis reporting for the '
                'distribution dashboard',
@@ -14,10 +14,10 @@ flousflow_distribution_vehicle + flousflow_distribution_vehicle_route):
   active route days as a utilization indicator (NOT a time-based
   utilization claim)
 * Current Vehicle Stock: standard stock.quant quantities per vehicle
-  warehouse — clearly labeled CURRENT stock, never historical (#40)
+  warehouse - clearly labeled CURRENT stock, never historical (#40)
 * Vehicle Analysis reporting menu
 
-Read-only — adds no workflow, changes no vehicle/stock data.
+Read-only - adds no workflow, changes no vehicle/stock data.
 """,
     'author': 'Flous Flow',
     'website': 'https://flousflow.com',
@@ -31,9 +31,16 @@ Read-only — adds no workflow, changes no vehicle/stock data.
         'security/security.xml',
         'views/vehicle_analysis_views.xml',
     ],
-    'installable': True,
+        'images': [
+        'static/description/index.html',
+        'static/description/thumbnail.png',
+        'static/description/cover.png',
+        'static/description/banner.png',
+        'static/description/icon.png',
+    ],
+'installable': True,
     'application': False,
     # Auto-merge: as soon as the dashboard + vehicle-route modules co-exist,
-    # the vehicle analytics section installs itself — no manual step.
+    # the vehicle analytics section installs itself - no manual step.
     'auto_install': True,
 }
